@@ -22,7 +22,7 @@ function EnquiryList({ data, getAllenquiry, Swal, setFormData }) {
 
       if (result.isConfirmed) {
         axios
-          .delete(`http://localhost:4000/api/website/enquiry/delete/${id}`)
+          .delete(`https://crud-application-backend-7kp5.onrender.com/api/website/enquiry/delete/${id}`)
           .then((res) => {
             toast.success("Enquiry Deleted Succesfully");
             //After delete view function agin run for ui update
@@ -39,7 +39,7 @@ function EnquiryList({ data, getAllenquiry, Swal, setFormData }) {
 
   
   let editRow = (editid) => {
-    axios.get(`http://localhost:4000/api/website/enquiry/single/${editid}`).then((res) => {
+    axios.get(`https://crud-application-backend-7kp5.onrender.com/api/website/enquiry/single/${editid}`).then((res) => {
         let data = res.data;
         console.log(data.enquiry);
         setFormData(data.enquiry);
