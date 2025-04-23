@@ -38,7 +38,7 @@ function Enquiry() {
 
     // If _id exists, update enquiry
     if(formData._id){
-      axios.put(`http://localhost:4000/api/website/enquiry/update/${formData._id}`,formData).then((res)=>{
+      axios.put(`https://crud-application-backend-7kp5.onrender.com/api/website/enquiry/update/${formData._id}`,formData).then((res)=>{
         
         toast.success('Enquiry Update Successfully');
         
@@ -57,7 +57,7 @@ function Enquiry() {
 
 
     // Create new enquiry
-    axios.post('http://localhost:4000/api/website/enquiry/insert',formData).then((res)=>{
+    axios.post('https://crud-application-backend-7kp5.onrender.com/api/website/enquiry/insert',formData).then((res)=>{
       // console.log(res.data);
 
       toast.success('Enquiry saved Successfully');
@@ -78,7 +78,7 @@ function Enquiry() {
 
   // Fetch all enquiries from server
   let getAllenquiry=()=>{
-    axios.get('http://localhost:4000/api/website/enquiry/view').then((res)=>{
+    axios.get('https://crud-application-backend-7kp5.onrender.com/api/website/enquiry/view').then((res)=>{
        return res.data
     }).then((finalData)=>{
       if(finalData.status){
