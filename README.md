@@ -2,6 +2,17 @@
 
 A modern fullstack web application built with **React (Vite)** on the frontend and **Node.js + Express** on the backend. This project allows users to submit enquiries through a form, which are then handled and stored in a backend database.
 
+
+---
+
+## 🔗 Live Demo
+
+🎉 You can try out the live version of this project here:
+
+👉 **[https://crud-application-frontend-d1g7.onrender.com](https://crud-application-frontend-d1g7.onrender.com)**
+
+This deployed version is fully functional and allows users to create, read, update, and delete enquiries in real-time. Feel free to test it out!
+
 ---
 
 ## 📁 Project Structure
@@ -40,6 +51,8 @@ project-root/
 - 💾 MongoDB for data storage
 - 🔐 Environment variable configuration using `.env`
 - 🧭 RESTful API with MVC structure
+  
+> 🔧 The backend is built using a clean **MVC architecture** (Model-View-Controller), making the codebase modular and easy to maintain.
 
 ---
 
